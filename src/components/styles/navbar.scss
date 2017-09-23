@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #EBF5F9;
+}
+
+.nav, .nav a:hover, .nav a:focus {
+  display: flex;
+  background-color: #EBF5F9 !important;
+}

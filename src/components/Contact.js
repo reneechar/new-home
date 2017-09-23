@@ -5,13 +5,13 @@ class Contact extends Component {
     return (
       <section id="contact">
 		  <h1>Contact Renee</h1>
-		  <div class="contact-info row">
-		    <div class="col-md-4 renee-picture"></div>
-		    <div class="col-md-6 social-media">
-		      <ul class="contact-options">
+		  <div className="contact-info row">
+		    <div className="col-md-4 renee-picture"></div>
+		    <div className="col-md-6 social-media">
+		      <ul className="contact-options">
 		        <li>
 		          <h2>
-		            <a href="mailto:renee@reneey.com"><i class="fa fa-envelope-o"></i> renee@reneey.com</a>
+		            <a href="mailto:renee@reneey.com"><i className="fa fa-envelope-o"></i> renee@reneey.com</a>
 		          </h2>
 		        </li>
 		        <li>

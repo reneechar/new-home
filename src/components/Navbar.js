@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './styles/navbar.scss'
 
 class Navbar extends Component {
   render() {
     return (
-      <div class="navbar" data-spy="affix" data-offset-top="300">
-        <ul class="nav navbar-nav">
+      <div className="navbar" data-spy="affix" data-offset-top="300">
+        <ul className="nav navbar-nav">
           <li>
             <a href="#">Home</a>
           </li>

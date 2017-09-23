@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+$underwater-blue: #226888;
+$light-underwater: #398EB6;
+$eyecat: #FFA200;
+$sunpower: #FFD600;
+$toxic-sunshine: #FFF500;
+
+a {
+  color: $light-underwater;
+  &:hover, &:focus {
+    color:$eyecat;
+  }
+
+}
+
+h1 {
+  color: $sunpower;
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+}
+
+h2 {
+  font-size: 20px;
+  color: $underwater-blue;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  vertical-align: center;
+  padding: 30px;
+}
+
+section {
+  padding-top: 70px;
+}
+
+.banner {
+  flex: 0 0 100%;
+  padding-top: 10px;
+  height: 300px;
+  background: url("./components/images/cherry-blossoms.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
