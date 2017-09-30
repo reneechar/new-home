@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import './styles/navbar.scss'
 
+
 class Navbar extends Component {
+  componentDidMount() {
+    window.onscroll = function() {
+      var sticky = document.getElementById("navbar");
+      if( document.body.scrollTop+document.documentElement.scrollTop > 420)
+          sticky.className = "stuck";
+      else sticky.className = "";
+    };
+  }
   render() {
     return (
-      <nav className="navbar">
+      <nav className="navbar" id="navbar">
         <ul className="nav navbar-nav">
           <li>
             <a href="#">Home</a>

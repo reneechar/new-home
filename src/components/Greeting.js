@@ -8,7 +8,9 @@ class Greeting extends Component {
       <ReactCSSTransitionGroup
         transitionName="greeting"
         transitionAppear={true}
-        transitionAppearTimeout={1500}>
+        transitionAppearTimeout={1500}
+        transitionEnter={false}
+        transitionLeave={false}>
         <section id="greeting">
           <section id="top">
             <h1>Aloha!</h1>

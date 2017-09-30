@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/contact.scss';
 
 class Contact extends Component {
   render() {
@@ -6,8 +7,8 @@ class Contact extends Component {
       <section id="contact">
 		  <h1>Contact Renee</h1>
 		  <div className="contact-info row">
-		    <div className="col-md-4 renee-picture"></div>
-		    <div className="col-md-6 social-media">
+		    <div className="renee-picture"></div>
+		    <div className="social-media">
 		      <ul className="contact-options">
 		        <li>
 		          <h2>
@@ -16,12 +17,12 @@ class Contact extends Component {
 		        </li>
 		        <li>
 		          <h2>
-		            <a href="https://www.linkedin.com/in/renee-char-42b2b3a0/"><i class="fa fa-linkedin-square"></i> Linked In</a>
+		            <a href="https://www.linkedin.com/in/renee-char-42b2b3a0/"><i className="fa fa-linkedin-square"></i> Linked In</a>
 		          </h2>
 		        </li>
 		        <li>
 		          <h2>
-		            <a href="https://github.com/reneechar/"><i class="fa fa-github-square"></i> GitHub</a>
+		            <a href="https://github.com/reneechar/"><i className="fa fa-github-square"></i> GitHub</a>
 		          </h2>
 		        </li>
 		      </ul>
