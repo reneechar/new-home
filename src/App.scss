@@ -12,7 +12,6 @@ a {
   &:hover, &:focus {
     color:$eyecat;
   }
-
 }
 
 h1 {
@@ -32,6 +31,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  padding: 0 60px;
 }
 
 .container {

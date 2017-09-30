@@ -1,0 +1,75 @@
+@mixin project {
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+#spellcasters {
+  background: url("/spellcasters.png") no-repeat left;
+  @include project;
+}
+
+#kanban {
+  background: url("/kanban.png") no-repeat left;
+  @include project;
+}
+
+#disruptArmy {
+  background: url("/disrupt-army.png") no-repeat left;
+  @include project;
+}
+
+#expressGallery {
+  background: url("/express-gallery.png") no-repeat left;
+  @include project;
+}
+
+.project-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  li {
+    flex: 0 0 45%;
+    margin: 0 40px 20px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .project-list > li {
+    flex: 0 0 100%;
+    margin: 20px 0;
+  }
+  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+    height: 300px;
+  }
+}
+
+.githubIcon {
+  width: 30px;
+  height: 30px;
+  background: url("/github.png");
+  background-size: contain;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.githubLink {
+  display: inline-block;
+  vertical-align: middle;
+}

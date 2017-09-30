@@ -1,0 +1,14 @@
+.greeting-appear {
+  opacity: 0.01;
+}
+
+.greeting-appear.greeting-appear-active {
+  opacity: 1;
+  transition: opacity 1500ms ease-in;
+}
+
+#greeting {
+  text-align: center;
+  margin: 0 auto 50px;
+
+}

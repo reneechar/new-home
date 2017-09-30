@@ -1,13 +1,9 @@
-$nav-height: 3em;
-
-
 nav, nav a:hover, nav a:focus {
   display: flex;
   background-color: #EBF5F9;
 }
 
 nav {
-  position: fixed;
   width: 100%;
 }
 
@@ -27,3 +23,4 @@ nav ul li {
 a {
   text-decoration: none;
 }
+
