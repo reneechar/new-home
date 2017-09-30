@@ -4,7 +4,7 @@ import './styles/navbar.scss'
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar" data-spy="affix" data-offset-top="300">
+      <nav className="navbar">
         <ul className="nav navbar-nav">
           <li>
             <a href="#">Home</a>
@@ -19,7 +19,7 @@ class Navbar extends Component {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-      </div>
+      </nav>
     );
   }
 }
