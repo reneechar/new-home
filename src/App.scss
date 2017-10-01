@@ -45,3 +45,9 @@ body {
 section {
   padding-top: 70px;
 }
+
+@media (max-width:500px) {
+  body {
+    padding: 0 10px;
+  }
+}

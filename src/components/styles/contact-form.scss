@@ -30,6 +30,7 @@ input, textarea, button {
 button {
   margin-top: 20px;
   background-color: $sunpower;
+  padding: 10px;
 }
 
 button:hover {
@@ -47,6 +48,11 @@ textarea {
 
 .invalid {
   border: 3px solid red;
+}
+
+#emailError {
+  display: none;
+  color: red;
 }
 
 /* The Modal (background) */
@@ -97,5 +103,13 @@ textarea {
   .notification-modal-content {
     top: 20px;
     padding: 20px;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  label, input, textarea, button {
+    flex: 0 0 95%;
   }
 }

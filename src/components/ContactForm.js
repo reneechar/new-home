@@ -13,6 +13,7 @@ class ContactForm extends Component {
     this.validateEmail = this.validateEmail.bind(this);
     this.openConfirmationModal = this.openConfirmationModal.bind(this);
     this.handleSubmission = this.handleSubmission.bind(this);
+    this.sendEmailNotification = this.sendEmailNotification.bind(this);
   }
   validateName(e) {
     console.log(document.getElementById("form").offsetHeight)
@@ -22,10 +23,13 @@ class ContactForm extends Component {
   validateEmail(e) {
     this.setState({email: e.target.value});
     var emailField = document.getElementById("email");
+    var emailError = document.getElementById("emailError");
     if (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(e.target.value)) {
-      emailField.className = 'valid';
+      emailField.className = "valid";
+      emailError.style.display = "none";
     } else {
-      emailField.className = 'invalid';
+      emailField.className = "invalid";
+      emailError.style.display = "block";
     }
   }
 
@@ -33,12 +37,11 @@ class ContactForm extends Component {
     e.preventDefault();
     console.log('submitted!')
     var emailField = document.getElementById("email");
-    if (emailField.className === 'invalid') {
-      console.log('please enter a valid email address');
-    } else {
+    if (emailField.className === "valid") {
       var form = document.getElementById("form");
       var completedForm = document.getElementById("completedForm");
       form.style.display = "none";
+      this.sendEmailNotification();
       this.openConfirmationModal();
     }
   }
@@ -49,6 +52,10 @@ class ContactForm extends Component {
     modal.style.display = "block";
   }
 
+  sendEmailNotification() {
+
+  }
+
   render() {
     return (
       <div>
@@ -57,6 +64,7 @@ class ContactForm extends Component {
           <input type="text" value={this.state.name} onChange={this.validateName} required/>
           <label>Email *</label>
           <input id="email" type="text" value={this.state.email} onChange={this.validateEmail} required/>
+          <label id="emailError">*Please enter a valid email address</label>
           <label>Message</label>
           <textarea rows="4" cols="50"></textarea>
           <button>Send</button>
