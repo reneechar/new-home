@@ -15,4 +15,18 @@
 .contact-info {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 100px;
+  h1 {
+    width:100%;
+  }
+}
+
+.social-media {
+  width: 100%;
 }

@@ -25,6 +25,11 @@
   @include project;
 }
 
+#paubox-help {
+  background: url("/paubox-help.png") no-repeat left;
+  @include project;
+}
+
 .project-list {
   list-style-type: none;
   margin: 0;
@@ -43,19 +48,19 @@
     flex: 0 0 100%;
     margin: 20px 0;
   }
-  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+  #spellcasters, #expressGallery, #kanban, #disruptArmy, #paubox-help {
     height: 500px;
   }
 }
 
 @media screen and (max-width: 761px) {
-  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+  #spellcasters, #expressGallery, #kanban, #disruptArmy, #paubox-help {
     height: 400px;
   }
 }
 
 @media screen and (max-width: 593px) {
-  #spellcasters, #expressGallery, #kanban, #disruptArmy {
+  #spellcasters, #expressGallery, #kanban, #disruptArmy, #paubox-help {
     height: 300px;
   }
 }

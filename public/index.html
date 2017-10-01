@@ -40,8 +40,15 @@
     -->
   </body>
   <script type="text/javascript">
-    $('.navbar').affix(
-      { offset: { top:300 } }
-    );
+    var modal = document.getElementById("notification-modal");
+    var span = document.getElementsByClassName("close-notification")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+    }
   </script>
 </html>
