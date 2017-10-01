@@ -7,3 +7,12 @@
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
+
+.contact-options {
+  list-style-type: none;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+}

@@ -12,3 +12,9 @@
   margin: 0 auto 50px;
 
 }
+
+@media (max-width: 500px) {
+  section {
+    padding-top: 20px;
+  }
+}

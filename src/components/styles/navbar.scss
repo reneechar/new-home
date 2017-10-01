@@ -16,7 +16,7 @@ nav ul {
 
 nav ul li {
  display: inline-block;
- padding: 0 3em;
+ padding: 0 1em;
  line-height: 3em;
 }
 
@@ -28,4 +28,12 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 500px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
