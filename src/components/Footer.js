@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer>
   		  <p>Created by Renee</p>
-  		  <p>© 2017 Renee Y Char</p>
+  		  <p>© 2018 Renee Y Char</p>
     	</footer>
     );
   }

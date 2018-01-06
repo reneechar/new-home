@@ -23,10 +23,14 @@ class Contact extends Component {
 		            <a href="https://github.com/reneechar/"><Gh /> GitHub</a>
 		          </h2>
 		        </li>
+            <li>
+              <h2>
+                <a href="mailto:renee@reneey.com"><FaEnvelopeO /> renee@reneey.com</a>
+              </h2>
+            </li>
 		      </ul>
 		    </div>
       </div>
-      <ContactForm />
 		</section>
     );
   }

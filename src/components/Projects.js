@@ -16,7 +16,7 @@ class Projects extends Component {
             </li>
             <li>
               <div className="project-description">
-                <a href="https://spellcastersgame.com/#/"><h2>SpellCasters</h2></a>
+                <a href="https://github.com/SpaceToastCoastToCoast/spell-casters"><h2>SpellCasters</h2></a>
                 <h5>Level up your vocabulary by playing this spelling game, packed with over a hundred of the most misspelled words in the English language</h5>
               </div>
               <a href="https://spellcastersgame.com/#/"><div className="project-img" id="spellcasters"></div></a>
