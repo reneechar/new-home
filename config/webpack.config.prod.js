@@ -154,9 +154,9 @@ module.exports = {
             },
           },
           {
-            test: /\.(scss|sass)$/,
+            test: /\.scss$/,
             include: paths.appSrc,
-            loader: ExtractTextPlugin.extract('style', 'css?importLoaders=1!postcss')
+            loaders: ['style-loader', 'css-loader', 'sass-loader?sourceMap=true']
           },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
