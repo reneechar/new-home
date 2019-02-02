@@ -14,7 +14,8 @@ class Greeting extends Component {
         <section id="greeting">
           <section id="top">
             <h1>Aloha!</h1>
-            <h2>I'm Renee, a web developer with a passion for design and optimization.</h2>
+            <h2>I'm Renee, a Software Engineer.</h2>
+            <h2 className="small">My dream is to make positive change in our world through creating technology that brings individuals together.</h2>
             <p>Based in San Francisco, CA</p>
           </section>
         </section>
