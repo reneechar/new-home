@@ -10,6 +10,17 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 class App extends Component {
+  componentDidMount() {
+    window.onscroll = function() {
+      var sticky = document.getElementById("navbar");
+      var banner = document.getElementById("banner");
+      if (document.body.scrollTop + document.documentElement.scrollTop > 477) {
+        sticky.className = "stuck";
+      } else {
+        sticky.className = "";
+      }
+    };
+  }
   render() {
     return (
       <div>

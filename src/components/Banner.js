@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './styles/banner.scss';
 
-class Header extends Component {
+class Banner extends Component {
   render() {
     return (
-      <div className="banner"></div>
+      <div id="banner"></div>
     );
   }
 }
 
-export default Header;
+export default Banner;
